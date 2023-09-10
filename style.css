@@ -1,0 +1,119 @@
+body{
+    background-color: antiquewhite;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+.portfolio>img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+.presentation{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.photo{
+  text-align: center;
+  margin-top: 5%;
+}
+
+
+.titre{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3em;
+}
+
+.description{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 4%;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.dropdown-content{
+    display: none;
+    position: static;
+    font-size: 2em;
+}
+
+.dropdown-content a{
+  color: blue;
+  text-decoration: none;
+  display: inline;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.projet{
+    text-align: center;
+}
+
+.projet .presentation-projet .image-projet>a>img{
+    width: 250px;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+
+
+.presentation-projet{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   visibility: hidden;
+   position: absolute;
+   width: 80%; 
+   justify-content: space-around;
+   align-content: space-between;
+   padding-left: 20%;
+   
+}
+
+.titre-projet {
+    text-decoration: none;
+    color: black;
+}
+
+.image-projet {
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;  
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.image-projet p {
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     max-width: 350px;
+     margin: auto;
+     margin-top: 5%;
+}
+
+.image-projet:hover {
+    box-shadow: 10px -10px gray; 
+    transform: translate(10px, -10px);
+}
